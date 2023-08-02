@@ -1,0 +1,373 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+
+a {
+    text-decoration: none
+}
+
+h5,
+h1,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #1e345f;
+}
+.backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+nav {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    background: #ffffff;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    position: fixed;
+    font-weight: bold;
+}
+
+.logoNav {
+    padding: 10px;
+}
+
+.navBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.itemNav ul,
+a {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    color: black;
+}
+
+.itemNav a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.main img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.hello h5 {
+    font-weight: 600;
+    font-size: large;
+}
+
+.named h1 {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.btnLanding,
+.btnContact {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: orange;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.btnLanding p {
+    font-weight: bold;
+    color: white;
+}
+
+.footer {
+    background-color: #1e345f;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footerBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoFoot {
+    padding: 20px;
+}
+
+.logo-footer {
+    width: 100px;
+}
+
+.aboutMe {
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+.titleExpe {
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+.titleAbout,.titleExpe {
+    background-color: #f4f7fc;
+}
+
+.titleAbout, .titleExpe h1 {
+    padding: 30px;
+    font-size: 50px;
+    padding-left: 10%;
+}
+
+.bodyAbout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataAbout {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 50%;
+}
+
+.imgAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imgDot {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(325%, 223%);
+}
+.imgPrim {
+    width: 400px;
+    border-radius: 5%;
+}
+
+.textAbout {
+    margin-bottom: 10px;
+}
+
+.textAbout p {
+    font-size: 20px;
+}
+
+.education {
+    margin-bottom: 20px;
+}
+
+.education h3 {
+    font-size: 25px;
+}
+
+.education li {
+    font-size: 20px;
+}
+
+.detailSkill {
+    margin-bottom: 20px;
+}
+
+.detailSkill h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.bodyContact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: center;
+
+}
+
+.bodyImg {
+    width: 600px;
+    position: relative;
+}
+
+.imgBg {
+    width: 100%;
+    z-index: 1;
+    background-size: cover;
+}
+
+.imgLogo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inputItem {
+    margin-bottom: 20px;
+}
+
+.formContact {
+    width: 50%;
+}
+
+form h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-size: 30px;
+}
+
+form input,
+select {
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+form input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+.bodyAbout {
+    margin-top: 20%;
+}
+
+.progress-bar {
+    position: relative;
+    width: 20px;
+    height: 600px;
+  }
+  .progress-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-color: #1e345f;
+  }
+  
+  .progress-dot {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1e345f;
+  }
+  
+  .progress-dot:nth-child(2) {
+    bottom: 26%;
+  }
+  
+  .progress-dot:nth-child(3) {
+    bottom: 58%;
+  }
+  
+  .progress-dot:nth-child(4) {
+    bottom: 93%;
+  }
+  
+  .card {
+    width: 800px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+  }
+  .card1 {
+    width: 800px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+  }
+  .card2 {
+    width: 800px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+  }
+  .allCard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  
+  .bodyExpe {
+    display: flex;
+    justify-content: center;
+  }
+.bodySocial {
+    color: white
+}
+  .copyright{
+    color: white;
+  }
+
+  .itemSosmed {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+  .line {
+    border-left:  gray solid;
+    height: 50px;
+    padding: 2px;
+    width: 0;
+  }
