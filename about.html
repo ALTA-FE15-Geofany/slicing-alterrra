@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- link css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/style.css" />
     <!-- link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,25 +28,48 @@
     <title>Aterra Clone | About</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav>
-      <div class="navBody">
-        <div class="logoNav">
-          <a href="index.html">
-            <img src="./assets/img/logo-ALTA.png" alt="logo-ALTA" />
+    <!-- nav section -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex">
+        <div>
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo-ALTA.png" alt />
           </a>
         </div>
-        <div class="itemNav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </div>
+      <div class="collapse px-3 navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <section class="aboutMe">
+    <!-- <section class="aboutMe">
       <div class="titleAbout">
         <h1>About Me</h1>
       </div>
@@ -62,7 +96,9 @@
               <li style="font-weight: bold">
                 2018 <br />
                 Bachelor Degree <br />
-                <span style="font-weight: 500"> BS Computer Engineering - University of Chicago </span>
+                <span style="font-weight: 500">
+                  BS Computer Engineering - University of Chicago
+                </span>
               </li>
             </ul>
           </div>
@@ -93,41 +129,126 @@
           </div>
         </div>
         <div class="imgAbout">
-          <img class="imgDot" src="./assets/img/img-dot.png" alt="">
-          <img class="imgPrim"
+          <img class="imgDot" src="./assets/img/img-dot.png" alt="" />
+          <img
+            class="imgPrim"
             src="./assets/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg"
             alt=""
           />
         </div>
       </div>
-    </section>
-        <!-- footer -->
-        <section class="footer">
-          <div class="footerBody">
-            <div class="logoFoot">
-              <a href="index.html">
-                <img
-                class="logo-footer"
-                src="./assets/img/logo-ALTA-v2.png"
-                alt="logo-footer"
-                />
-              </a>
-            </div>
-            <div class="bodySocial">
-              <span>Social Media</span>
-              <div class="itemSosmed">
-                <img src="./assets/img/ic_fb.png" alt="" />
-                <img src="./assets/img/ic-twitter.png" alt="" />
-                <img src="./assets/img/ic-instagram.png" alt="" />
-                <img src="./assets/img/ic-linkedin.png" alt="" />
+    </section> -->
+    <!-- footer -->
+    <section class="about mt-5">
+      <div class="titleAbout d-none d-lg-block d-md-block">
+        <h1 class="fw-bold">About Me</h1>
+      </div>
+      <div
+        style="height: 100vh"
+        class="container-fluid d-flex align-items-center justify-content-center"
+      >
+        <div class="bodyAbout">
+          <div class="row ">
+            <div class="col-12 order-2 order-lg-1 order-md-1 col-md-6 p-4">
+              <div class="w-75">
+                <p class="fw-semibold">
+                  Versatile Front-end Developer with 3+ years of experience
+                  designing, developing, and managing complex e-commerce sites
+                  and internal frameworks. Specializes in AngularJS and
+                  responsive design.
+                </p>
+              </div>
+              <div>
+                <div class="education">
+                  <h3>Education</h3>
+                  <ul>
+                    <li style="font-weight: bold">
+                      2014 <br />
+                      Diploma <br />
+                      <span style="font-weight: 500">
+                        Computer Engineering - University of Chicago
+                      </span>
+                    </li>
+                    <li style="font-weight: bold">
+                      2018 <br />
+                      Bachelor Degree <br />
+                      <span style="font-weight: 500">
+                        BS Computer Engineering - University of Chicago
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="detailSkill">
+                  <h3>
+                    Here's few technology I've been working with recently :
+                  </h3>
+                </div>
+                <table border="1" class="table">
+                  <tr>
+                    <th>Html & CSS</th>
+                    <th>Serverless</th>
+                    <th>Scrum</th>
+                  </tr>
+                  <tr>
+                    <td>Programming</td>
+                    <td>Restful API</td>
+                    <td>Test-Driven Dev</td>
+                  </tr>
+                  <tr>
+                    <td>Database</td>
+                    <td>Javascript</td>
+                    <td>Software Testing</td>
+                  </tr>
+                  <tr>
+                    <td>Git & Github</td>
+                    <td>Single Page App</td>
+                    <td>UX/UI Designer</td>
+                  </tr>
+                </table>
               </div>
             </div>
-            <div class="line">
-            </div>
-            <div>
-              <span class="copyright">Copyright © 2023. Alterra</span>
+
+            <div
+              class="col-12 order-1 order-lg-2 order-md-2 col-md-6 d-flex justify-content-center"
+            >
+              <img
+                class="rounded-4 w-50 sm object-fit-cover"
+                src="./assets/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg"
+                alt=""
+              />
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footerBody">
+        <div class="logoFoot">
+          <a href="index.html">
+            <img
+              class="logo-footer"
+              src="./assets/img/logo-ALTA-v2.png"
+              alt="logo-footer"
+            />
+          </a>
+        </div>
+        <div class="bodySocial">
+          <span>Social Media</span>
+          <div class="itemSosmed">
+            <img src="./assets/img/ic_fb.png" alt="" />
+            <img src="./assets/img/ic-twitter.png" alt="" />
+            <img src="./assets/img/ic-instagram.png" alt="" />
+            <img src="./assets/img/ic-linkedin.png" alt="" />
+          </div>
+        </div>
+        <div class="line"></div>
+        <div>
+          <span class="copyright">Copyright © 2023. Alterra</span>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

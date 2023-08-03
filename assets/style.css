@@ -1,16 +1,14 @@
-html {
-    padding: 0;
-    margin: 0;
-}
-
-body {
+body, html {
     font-family: 'Poppins', sans-serif;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 
 a {
     text-decoration: none
+
 }
 
 h5,
@@ -22,12 +20,12 @@ h3 {
 }
 .backgroundImg {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100vh;
     z-index: -1;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 nav {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
@@ -38,31 +36,8 @@ nav {
     position: fixed;
     font-weight: bold;
 }
-
-.logoNav {
-    padding: 10px;
-}
-
-.navBody {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-
-}
-
-.itemNav ul,
-a {
-    display: flex;
-    gap: 50px;
-    list-style-type: none;
-    color: black;
-}
-
-.itemNav a:hover {
+.navLink:hover {
     color: orange;
-    cursor: pointer;
 }
 
 .home {
@@ -73,22 +48,16 @@ a {
     height: 100vh;
 }
 
-.home .main {
+
+.indexBody {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    margin-top: 15%;
 }
 
 
-.main img {
-    width: 20%;
-    border-radius: 50%;
-}
-
-.hello h5 {
-    font-weight: 600;
-    font-size: large;
+.hindex {
+    font-size: 70px;
 }
 
 .named h1 {
@@ -120,6 +89,7 @@ a {
 }
 
 .footer {
+    margin-top: 150px;
     background-color: #1e345f;
     bottom: 0;
     left: 0;
@@ -140,16 +110,15 @@ a {
     width: 100px;
 }
 
-.aboutMe {
-    padding-top: 80px;
-    margin-bottom: 50px;
-}
 .titleExpe {
     padding-top: 80px;
     margin-bottom: 50px;
 }
 .titleAbout,.titleExpe {
     background-color: #f4f7fc;
+}
+.titleAbout{
+    margin-top: 80px;
 }
 
 .titleAbout, .titleExpe h1 {
@@ -210,7 +179,7 @@ a {
 }
 
 .detailSkill {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .detailSkill h3 {
@@ -269,7 +238,6 @@ form label {
 form input,
 select {
     border-radius: 5px;
-    box-sizing: border-box;
 
 }
 
@@ -286,7 +254,7 @@ select {
 .progress-bar {
     position: relative;
     width: 20px;
-    height: 600px;
+    height: 90%;
   }
   .progress-line {
     position: absolute;
@@ -352,6 +320,7 @@ select {
   .bodyExpe {
     display: flex;
     justify-content: center;
+    background-color: red;
   }
 .bodySocial {
     color: white
@@ -370,4 +339,19 @@ select {
     height: 50px;
     padding: 2px;
     width: 0;
+  }
+
+  #messageForm{
+    height: 100px;
+  }
+
+  @media(max-width: 760px) {
+    .bodyAbout{
+        margin-top: 100%;
+    }
+  }
+  @media(max-width: 760px) {
+    .footer{
+        margin-top: 100%;
+    }
   }
